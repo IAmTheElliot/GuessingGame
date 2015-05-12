@@ -1,0 +1,21 @@
+<script>
+
+// declare variables
+	var nameguess, nameactual, outputmsg;
+
+// set  variables
+	nameactual = "thomas";
+	console.log("Hint: My initians are E.T.");
+	nameguess = prompt("Guess Elliot's middle name, if you dare!");
+
+// check for correct/incorrect answer
+	if (nameguess.toLowerCase() === nameactual) {
+		outputmsg = "Congratulations, you can now call me an extraterrestrial!"
+	} else {
+		outputmsg = "Sorry, you were wrong!"
+	}
+
+// output answer
+	window.alert(outputmsg)
+
+</script>
