@@ -1,5 +1,5 @@
 <script type="text/javascript">
- // function() {
+// function() {
   // declare variables
     function constructor(correctAnswer, loopCount, nameGuess){
       this.correctAnswer = correctAnswer;
@@ -8,20 +8,14 @@
     }
 
   // test user input
-  //	console.log("Hint: My initials are E.T.");
-    
     var thomasConstructor = new constructor("thomas", 1, prompt("Guess Elliot's middle name if you dare!"));
     // var mauriceConstructor = new constructor("maurice", 1, "");
 
-    
-    do {
-    	if(thomasConstructor.nameGuess === thomasConstructor.correctAnswer) {
-    		alert("Congratulations! You can now call me an extra terrestrial!");
-    	} else {
-    		thomasConstructor.nameGuess = prompt("Hint: my initials are E.T. You have incorretly guessed " + thomasConstructor.loopCount + " times!");
+    while (thomasConstructor.nameGuess != thomasConstructor.correctAnswer); {
+        thomasConstructor.nameGuess = prompt("Hint: my initials are E.T. You have incorretly guessed " + thomasConstructor.loopCount + " times!");
         thomasConstructor.loopCount++;
-    	}
     }
-    while (thomasConstructor.nameGuess != thomasConstructor.correctAnswer);
-//} ()    
+    alert("Congratulations! You can now call me an extra terrestrial!");
+
+//} ()
 </script>
