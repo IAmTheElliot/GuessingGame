@@ -3,67 +3,71 @@
     <title>Pick a name, any name!</title>
   </head>
   <body>
-    <h1>Elliot's CodeFellows SEA-B30 game!</h1>
-    <h2>Greetings!</h2>
-    <p>Hello and welcome to this lovely little web page! I'm glad you've stopped by to test your knowledge of your classmates! In today's scripting, we'll be testing how well you can guess the middle names of your fellow students!</p>
+    <header>
+      <h1>Elliot's CodeFellows SEA-B30 game!</h1>
+    </header>
+    <main>
+      <h2>Greetings!</h2>
+      <p>Hello and welcome to this lovely little web page! I'm glad you've stopped by to test your knowledge of your classmates! In today's scripting, we'll be testing how well you can guess the middle names of your fellow students!</p>
 
-    <p>In this handy dandy little site, you'll be asked to pick a co-educatee's first name and then guess their middle name! You'll have unlimited guesses and a hint for each along the way to help out! Don't worry if you don't guess correctly, this whole thing is only for my grade and in no way, shape, or form reflects on you as a human being and will NOT mean I fail at life and then lose my house and thus have to pimp out pettings of my kitty for a living. Really, it's not that big of a deal!
+      <p>In this handy dandy little site, you'll be asked to pick a co-educatee's first name and then guess their middle name! You'll have unlimited guesses and a hint for each along the way to help out! Don't worry if you don't guess correctly, this whole thing is only for my grade and in no way, shape, or form reflects on you as a human being and will NOT mean I fail at life and then lose my house and thus have to pimp out pettings of my kitty for a living. Really, it's not that big of a deal!
 
-<h2>Get ready to play a game!</h2>
-  </p>In the section below, you will enter your first, middle, and last name, as well as a hint regarding your middle name. These will be saved and added to the list of others that have played this game already, and thus your fellow students will get to guess about you! If you have played this game, or otherwise don't care to add yourself to the document, you can skip ahead by making sure the the checkbox below is checked.
-  <hr/><ul>To do:<li>directions here?</li><li>check box checked disables inputs</li>
-      <li>User must select/validate pina coladas and rain</li></ul></p><hr/>
+      <h2>Get ready to play a game!</h2>
+      </p>In the section below, you will enter your first, middle, and last name, as well as a hint regarding your middle name. These will be saved and added to the list of others that have played this game already, and thus your fellow students will get to guess about you! If you have played this game, or otherwise don't care to add yourself to the document, you can skip ahead by making sure the the checkbox below is checked.
+      <hr/><ul>To do:<li>directions here?</li><li>check box checked disables inputs</li>
+          <li>User must select/validate pina coladas and rain</li></ul></p><hr/>
 
-  <h3>Enter your submission here:</h2>
-  <p><label>Uncheck to add information</label><input type="checkbox", id="already-played", checked="checked", autofocus /></p>
-  </p>
-    <label>First name</label><input type="text", id="first-name-input"/>
-    <label>Middle name</label><input type="text", id="middle-name-input"/>
-    <label>Last name</label><input type="text", id="last-name-input"/></p>
-  <p><label>Name Hint</label><input type="text", id="name-hint-input"></p>
+      <h3>Enter your submission here:</h2>
+      <p><label>Uncheck to add information</label><input type="checkbox", id="already-played", checked="checked", autofocus /></p>
+      </p>
+        <label>First name</label><input type="text", id="first-name-input"/>
+        <label>Middle name</label><input type="text", id="middle-name-input"/>
+        <label>Last name</label><input type="text", id="last-name-input"/></p>
+      <p><label>Name Hint</label><input type="text", id="name-hint-input"></p>
 
-  <p>Do you like pina coladas?
-    <select name="pina">
-      <!-- <option value=""></option> -->
-      <option value="pinaYes">Yes</option>
-      <option value="pinaNo">No</option>
-    </select></p>
+      <p>Do you like pina coladas?
+        <select name="pina">
+          <!-- <option value=""></option> -->
+          <option value="pinaYes">Yes</option>
+          <option value="pinaNo">No</option>
+        </select></p>
 
-  <p>And getting caught in the rain?
-    <select name="rain">
-      <!-- <option value=""></option> -->
-      <option value="rainYes">Yes</option>
-      <option value="rainNo">No</option>
-    </select></p>
-  <p><button>Click to submit!</button></p>
-  <!-- <p><button>READY FIRE AIM!!</button></p> -->
+      <p>And getting caught in the rain?
+        <select name="rain">
+          <!-- <option value=""></option> -->
+          <option value="rainYes">Yes</option>
+          <option value="rainNo">No</option>
+        </select></p>
+      <p><button>Click to submit!</button></p>
+      <!-- <p><button>READY FIRE AIM!!</button></p> -->
 
-  <p>
-<hr/>
+      <p>
+    <hr/>
 
-<!-- first and last name, output middle name,  -->
+    <!-- first and last name, output middle name,  -->
 
-<p><h3>Test Data</h3></p>
-<p>You have been given "student name" to guess about! Please enter your guess for their middle name below!</p>
-<p><label>Guess</label><input type="text", id="user-guess"</label></p>
-<p name="name-hint">(guess hint will go here)</p>
+    <p><h3>Test Data</h3></p>
+    <p>You have been given "student name" to guess about! Please enter your guess for their middle name below!</p>
+    <p><label>Guess</label><input type="text", id="user-guess"</label></p>
+    <p name="name-hint">(guess hint will go here)</p>
 
-<hr/>
+    <hr/>
 
-<p><h3>Results</h3></p>
-<p name="give-name-result"><b><i>First name + user-guess + last name is correct/incorrect!!</b></i></p>
-<p name="give-options-result"></p>And did you also know <b><i>they like/dislike pina coladas/rain</b></i></p>
-<p name="guess-times">You have guessed a total of # times.</p>
+    <p><h3>Results</h3></p>
+    <p name="give-name-result"><b><i>First name + user-guess + last name is correct/incorrect!!</b></i></p>
+    <p name="give-options-result"></p>And did you also know <b><i>they like/dislike pina coladas/rain</b></i></p>
+    <p name="guess-times">You have guessed a total of # times.</p>
 
-<!-- find picture to show upon right/wrong asnwer
-  random name pick
-  names into array -->
+    <!-- find picture to show upon right/wrong asnwer
+      random name pick
+      names into array -->
 
-<hr/>
+    <hr/>
+</main>
 
 
 
-
+<footer>
   <h4>This is completely unrelated to the program</h4>
     <p>Now, because I'm bored and I have nothing else to put into this space, I'm going to use some of the common tags used in HTML! For example, wrapping a word in a tag with a b makes it look <b>bold</b>. Or you can use the i key for <i>italics</i>. Additionally, the <strong>strong</strong> and <em>em (emphasis)</em> might LOOK like they're <b>bold</b> or <i>italicized</i>, but they really aren't!</p>
     <p>In this paragraph, I'm going to blatanty plagiarize one of my text books to show two more tags! I won't tell you which book, or that would defeat the purpose of plagiarism! That said, do you know what <acronym title="National Aeronautics and Space Administration">NASA</acronym> stands for? <acronym title="National Aeronautics and Space Administration">NASA stands for National Aeronautics and Space Administration! Turns out, if you hover your cursor over <acronym title="National Aeronautics and Space Administration">NASA, the full name will show. Hey!! Let's make that part of the guessing game!
@@ -80,5 +84,6 @@
       </ul>
     <h3>Have you smiled lately? SMILE!</h3>
     <img src=smile.jpeg>
+  </footer>
   </body>
 </html>
