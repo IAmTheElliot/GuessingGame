@@ -1,4 +1,3 @@
-<script type="text/javascript">
 // function() {
   // declare variables
     function constructor(correctAnswer, loopCount, nameGuess){
@@ -22,4 +21,4 @@
     alert("Congratulations! You can now call me an extra terrestrial!");
 
 //} ()
-</script>
+console.log = ()
